@@ -108,10 +108,16 @@ ___斜粗体2___	            3对_<br>
 ## 插入图片
 `格式:`!\[标识内容](链接地址 "停留文本")<br>
 
-### 网络图片<br>
-![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
-### 仓库图片<br>
-![小安卓的图片](https://github.com/Dshidai/jisuanqi/src/main/res/mipmap-hdpi/ic_launcher.png "什么鬼")
+### 网络（外部url）图片<br>
+#### 方法1
+
+[baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
+#### 方法2
+![baidu]([baidulogo] "原来没有图片直接显示")
+
+>使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
+### 仓库（github）图片<br>
+![计算器里的图片](https://github.com/Dshidai/jisuanqi/blob/master/src/main/res/mipmap-hdpi/ic_launcher.png "什么鬼")
 
 
 
@@ -124,7 +130,7 @@ ___斜粗体2___	            3对_<br>
 
 
 
-
-
-
+-----------------------------------------------------------------------------------------------
+本文末尾：
+[baidulogo]:http://www.baidu.com/img/bdlogo.gif
 
