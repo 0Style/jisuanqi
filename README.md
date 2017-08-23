@@ -6,8 +6,6 @@
 [TOC]
 
 
-
-
 ## 1.横线
 空1行后，下面添加3个  - 或者  _ 或者  * 号，显示1条浅浅的横线
 
@@ -166,7 +164,7 @@ if __name__ == '__main__':
 
 
 ### 13.插入表格
-格式：\|AAA  \| BBB  \|  CCC  \|
+格式：\|AAA  \| BBB  \|  CCC  \|<br>
 | 项目        | 价格    |  数量 |<br>
 | --------  | -----:  | :----:|<br>
 | 计算机     | \$1600  |   5   |<br>
@@ -178,28 +176,23 @@ if __name__ == '__main__':
 ## 14.显示图片
 ### 显示网络（外部url）的图片<br>
 #### 方法1
-`格式:`!\[标识](链接地址 "停留文本")(添加感叹号能显示出图片)
-
-编辑工具栏
+`格式:`!\[标识](链接地址 "停留文本")    (添加感叹号能显示出图片)
+<br>编辑工具栏:<br>
 ![tool-editor](https://www.zybuluo.com/static/img/toolbar-editor.png "好牛逼的样子")
-<br>
-管理工具栏
+<br>管理工具栏:<br>
 ![tool-manager](https://www.zybuluo.com/static/img/toolbar-manager.jpg "同意的样子")
-<br>
-阅读工具栏
+<br>阅读工具栏:<br>
 ![tool-reader](https://www.zybuluo.com/static/img/toolbar-reader.jpg "我不是打广告的")
-<br>
-如下图所示：
+<br>如下图所示:<br>
 ![file-list](https://www.zybuluo.com/static/img/file-list.png "负责收集图片吧，哈哈哈")
-<br>
+<br>以下是百度logo：<br>
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
-
-
-#### 方法2（两个方括号中间要加一个空格）
-![baidu] [baidulogo]
-
-
+#### 方法2
+`格式:`!\[标识][URL标识]（两个方括号中间不要加空格）
+<br>
+![baidu][baidulogo]
 >使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
+
 
 
 ### 显示仓库（github）的图片<br>
@@ -261,16 +254,12 @@ Bob-->Alice: I am good thanks!
 
 ## 20.
 再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！
-作者 [@ghosert][3]     
-2016 年 07月 07日    
-
-[^LaTeX]: 支持 **LaTeX** 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 [MathJax][4] 参考更多使用方法。
-
-[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，**四十一**种主流编程语言。
+作者 [@Linyu][3]     
+2017 年 08月 25日    
 
 [1]: https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown
 [2]: https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册
-[3]: http://weibo.com/ghosert
+[3]: http://weibo.com/Dshidai
 [4]: http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
 [baidulogo]:http://www.baidu.com/img/bdlogo.gif "百度logo"
 
