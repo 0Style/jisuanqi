@@ -111,7 +111,7 @@ ___斜粗体2___	            3对_<br>
 #### 方法1
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
 #### 方法2
-[![baidu][baidulogo] "原来没有图片直接显示"]
+![baidu]([baidulogo] "原来没有图片直接显示")
 >使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
 
 ### 仓库（github）图片<br>
