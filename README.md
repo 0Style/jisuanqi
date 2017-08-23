@@ -176,22 +176,32 @@ if __name__ == '__main__':
 
 
 ## 14.显示图片
-`格式:`!\[标识](链接地址 "停留文本")(添加感叹号能显示出图片)
-
 ### 显示网络（外部url）的图片<br>
 #### 方法1
-![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
-#### 方法2
-![baidu][baidulogo]:http://www.baidu.com/img/bdlogo.gif "百度logo"
->使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
+`格式:`!\[标识](链接地址 "停留文本")(添加感叹号能显示出图片)
+
 编辑工具栏
 ![tool-editor](https://www.zybuluo.com/static/img/toolbar-editor.png "好牛逼的样子")
+<br>
 管理工具栏
 ![tool-manager](https://www.zybuluo.com/static/img/toolbar-manager.jpg "同意的样子")
+<br>
 阅读工具栏
 ![tool-reader](https://www.zybuluo.com/static/img/toolbar-reader.jpg "我不是打广告的")
+<br>
 如下图所示：
 ![file-list](https://www.zybuluo.com/static/img/file-list.png "负责收集图片吧，哈哈哈")
+<br>
+![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
+
+
+#### 方法2（两个方括号中间要加一个空格）
+![baidu] [baidulogo]
+
+
+>使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
+
+
 ### 显示仓库（github）的图片<br>
 ![计算器里的图片](https://github.com/Dshidai/jisuanqi/blob/master/src/main/res/mipmap-hdpi/ic_launcher.png "什么鬼")
 
@@ -262,7 +272,7 @@ Bob-->Alice: I am good thanks!
 [2]: https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册
 [3]: http://weibo.com/ghosert
 [4]: http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
-
+[baidulogo]:http://www.baidu.com/img/bdlogo.gif "百度logo"
 
 
 
