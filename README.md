@@ -101,7 +101,16 @@ ___斜粗体2___	            3对_<br>
 
 
 ## 9.插入公式
-$$E=mc^2$$
+#### $ 表示行内公式<br>
+质能公式：$E=mc^2$
+#### $$ 表示整行公式<br>
+$$\sum_{i=1}^n a_i=0$$
+
+$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+
+$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
+
+访问 [MathJax](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) 参考更多使用方法。
 
 
 ## 10.插入代码段
@@ -119,18 +128,36 @@ int main (int arge, char *argv[])
 }
 ```
 
-```Bash
-echo "Hello GitHub"                                                         #bash
-```
 
-```Javascript
-document.getElementById("myH1").innerHTML="Welcome to my Homepage";         //Javascript
-```
 
 ```C++
 string &operator+(const string& A,const string B)                           //cpp
 ```
 
+非代码示例：
+```Bash
+echo "Hello GitHub"                                                         #bash
+```
+```
+$ sudo apt-get install vim-gnome
+```
+
+Python 示例：
+
+```python
+@requires_authorization
+def somefunc(param1='', param2=0):
+    '''A docstring'''
+    if param1 > param2: # interesting
+        print 'Greater'
+    return (param2 - param1 + 1) or None
+
+class SomeClass:
+    pass
+
+>>> message = '''interpreter
+... prompt'''
+```
 ```Python
 @requires_authorization                                                                                        
 class SomeClass:                                                            //python
@@ -138,6 +165,33 @@ class SomeClass:                                                            //py
 if __name__ == '__main__':
     # A comment
     print 'Hello Python'
+```
+
+
+JavaScript 示例：
+
+``` javascript
+/**
+* nth element in the fibonacci series.
+* @param n >= 0
+* @return the nth element, >= 0.
+*/
+function fib(n) {
+  var a = 1, b = 1;
+  var tmp;
+  while (--n >= 0) {
+    tmp = a;
+    a += b;
+    b = tmp;
+  }
+  return a;
+}
+
+document.write(fib(10));
+```
+
+```Javascript
+document.getElementById("myH1").innerHTML="Welcome to my Homepage";         //Javascript
 ```
 
 
@@ -153,8 +207,18 @@ if __name__ == '__main__':
 <li>Parish</li>
 </ol>
 
+## 12.定义型列表
+名词 1
+:   定义 1（左侧有一个可见的冒号和四个不可见的空格）
 
-## 12.办事列表[Todo 列表](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-待办事宜-todo-列表)
+代码块 2
+:   这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）
+
+        代码块（左侧有八个不可见的空格)
+
+
+
+## 13.办事列表[Todo 列表](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-待办事宜-todo-列表)
 格式：\- \[]文本，如若是打√，则是向方括号内写x
 - [ ] 支持以 PDF 格式导出文稿
 - [ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率
@@ -162,18 +226,22 @@ if __name__ == '__main__':
 - [x] 修复 LaTex 公式渲染问题
 - [x] 新增 LaTex 公式编号功能
 
+Todo列表功能 [语法参考](https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments)
+<br>
+LaTex 公式编号功能 [语法参考](http://docs.mathjax.org/en/latest/tex.html#tex-eq-numbers)
 
-### 13.插入表格
+
+### 14.插入表格
 格式：\|AAA  \| BBB  \|  CCC  \|<br>
-| 项目        | 价格    |  数量 |<br>
-| --------  | -----:  | :----:|<br>
-| 计算机     | \$1600  |   5   |<br>
-| 手机       |   \$12  |   12  |<br>
-| 管线       |    \$1   |  234 |<br>
+
+| 项目        | 价格   |  数量  |
+| --------   | -----:  | :----:  |
+| 计算机     | \$1600 |   5     |
+| 手机        |   \$12   |   12   |
+| 管线        |    \$1    |  234  |
 
 
-
-## 14.显示图片
+## 15.显示图片
 ### 显示网络（外部url）的图片<br>
 #### 方法1
 `格式:`!\[标识](链接地址 "停留文本")    (添加感叹号能显示出图片)
@@ -193,13 +261,11 @@ if __name__ == '__main__':
 ![baidu][baidulogo]
 >使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
 
-
-
 ### 显示仓库（github）的图片<br>
 ![计算器里的图片](https://github.com/Dshidai/jisuanqi/blob/master/src/main/res/mipmap-hdpi/ic_launcher.png "什么鬼")
 
 
-## 15.超链接
+## 16.超链接
 `文本格式:`\[文本内容](链接地址 "停留文本")
 <br>
 [D时代的Github](https://github.com/Dshidai "haha") 
@@ -210,7 +276,7 @@ if __name__ == '__main__':
 <br> 
 
 
-### 16.插入[流程图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图)
+### 17.插入[流程图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图)
 ```flow
 st=>start: Start
 op=>operation: Your Operation
@@ -220,13 +286,58 @@ st->op->cond
 cond(yes)->e
 cond(no)->op
 ```
-### 17.插入[序列图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图)
+```flow
+st=>start: Start:>https://www.zybuluo.com
+io=>inputoutput: verification
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+sub=>subroutine: Your Subroutine
+e=>end
+
+st->io->op->cond
+cond(yes)->e
+cond(no)->sub->io
+```
+
+更多语法参考：[流程图语法参考](http://adrai.github.io/flowchart.js/)
+#### Mermaid 流程图
+
+```graphLR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
+
+更多语法参考：[Mermaid 流程图语法参考](https://knsv.github.io/mermaid/#flowcharts-basic-syntax)
+
+
+### 18.插入[序列图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图)
 ```seq
 Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
 ```
-### 18.插入[甘特图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-甘特图)
+```seq
+Title: Here is a title
+A->B: Normal line
+B-->C: Dashed line
+C->>D: Open arrow
+D-->>A: Dashed open arrow
+```
+更多语法参考：[序列图语法参考](http://bramp.github.io/js-sequence-diagrams/)
+#### Mermaid 序列图
+
+```sequence
+    Alice->John: Hello John, how are you?
+    loop every minute
+        John-->Alice: Great!
+    end
+```
+
+更多语法参考：[Mermaid 序列图语法参考](https://knsv.github.io/mermaid/#sequence-diagrams)
+
+### 19.插入[甘特图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-甘特图)
 ```gantt
     title 项目开发流程
     section 项目确定
@@ -242,9 +353,10 @@ Bob-->Alice: I am good thanks!
         发布: 2d
         验收: 3d
 ```
+更多语法参考：[甘特图语法参考](https://knsv.github.io/mermaid/#gant-diagrams)
 
 
-## 19.注脚
+## 20.注脚
 
 使用 [^keyword] 表示注脚。
 
@@ -252,9 +364,64 @@ Bob-->Alice: I am good thanks!
 
 这是第二个注脚[^footnote2]的样例。
 
-## 20.
+
+## 21. 支持 Html 标签
+
+支持在 Markdown 语法中嵌套 Html 标签，譬如，你可以用 Html 写一个纵跨两行的表格：
+
+    <table>
+        <tr>
+            <th rowspan="2">值班人员</th>
+            <th>星期一</th>
+            <th>星期二</th>
+            <th>星期三</th>
+        </tr>
+        <tr>
+            <td>李强</td>
+            <td>张明</td>
+            <td>王平</td>
+        </tr>
+    </table>
+
+
+<table>
+    <tr>
+        <th rowspan="2">值班人员</th>
+        <th>星期一</th>
+        <th>星期二</th>
+        <th>星期三</th>
+    </tr>
+    <tr>
+        <td>李强</td>
+        <td>张明</td>
+        <td>王平</td>
+    </tr>
+</table>
+
+
+
+## 22. 内嵌图标
+输入:
+
+    <i class="icon-weibo"></i>
+
+即显示微博的图标： <i class="icon-weibo icon-2x"></i>
+
+替换 上述 `i 标签` 内的 `icon-weibo` 以显示不同的图标，例如：
+
+    <i class="icon-renren"></i>
+
+即显示人人的图标： <i class="icon-renren icon-2x"></i>
+
+更多的图标和玩法可以参看 [font-awesome](http://fortawesome.github.io/Font-Awesome/3.2.1/icons/) 官方网站。
+
+
+
+
+## 30. 哈哈哈
 再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！
-作者 [@Linyu][3]     
+<br>
+盗版作者 [@Linyu][3]     
 2017 年 08月 25日    
 
 [1]: https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown
