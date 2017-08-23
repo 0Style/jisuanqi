@@ -270,10 +270,16 @@ LaTex 公式编号功能 [语法参考](http://docs.mathjax.org/en/latest/tex.ht
 <br>
 [D时代的Github](https://github.com/Dshidai "haha") 
 <br>
+
 `图片格式:`\[图片标识](链接地址 "停留文本")
 <br>
 [D时代的GitHub]：(https://github.com/Dshidai "哈哈") 
 <br> 
+
+#### 隐式链接标记功能
+让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让 "Google" 链接到 google.com，你可以简化成：[Google][]
+然后再定义链接的内容
+[Google]: http://google.com/
 
 
 ### 17.插入[流程图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图)
@@ -416,6 +422,11 @@ D-->>A: Dashed open arrow
 更多的图标和玩法可以参看 [font-awesome](http://fortawesome.github.io/Font-Awesome/3.2.1/icons/) 官方网站。
 
 
+
+
+
+Please don't use any `<blink>` tags.
+`&#8212;` is the decimal-encoded equivalent of `&mdash;`.
 
 
 ## 30. 哈哈哈
