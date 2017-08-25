@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">计算器</string>
+
+    <string name="Button_del">删除</string>
+    <string name="TextView_error">？表达式错误^(*￣(oo)￣)^</string>
+    <string name="Menu_title">关于</string>
+    <string name="unknown">未知</string>
+    <string name="version_info">版本:%s \n 设计者:林羽</string>
+
+</resources>

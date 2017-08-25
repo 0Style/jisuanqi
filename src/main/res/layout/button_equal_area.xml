@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_add"
+        style="@style/Button_Style_Calcul"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="@string/Button_add"
+        />
+    <Button
+        android:id="@+id/btn_sub"
+        style="@style/Button_Style_Calcul"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="@string/Button_sub"
+        />
+    <Button
+        android:id="@+id/btn_mul"
+        style="@style/Button_Style_Calcul"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="@string/Button_mul" />
+    <Button
+        android:id="@+id/btn_div"
+        style="@style/Button_Style_Calcul"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="@string/Button_div" />
+    <Button
+        android:id="@+id/btn_equ"
+        android:background="@drawable/button_shape_border"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:onClick="onClick"
+        android:text="@string/Button_equ" />
+    <!--style="@style/Button_Style_Result"-->
+
+</merge>
