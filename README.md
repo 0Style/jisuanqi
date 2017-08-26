@@ -232,18 +232,18 @@ LaTex 公式编号功能 [语法参考](http://docs.mathjax.org/en/latest/tex.ht
 
 
 ### 14.插入表格
-格式：\|AAA  \| BBB  \|  CCC  \|<br>
+格式：\|AAA  \| BBB  \|  CCC  \|，下一行换成' - '<br>
 
 | 项目        | 价格   |  数量  |
-| --------   | -----:  | :----:  |
-| 计算机     | \$1600 |   5     |
+|--------    |------: | :----:  |
+| 计算机      | \$1600 |    5    |
 | 手机        |   \$12   |   12   |
 | 管线        |    \$1    |  234  |
 
 
 ## 15.显示图片
-### 显示网络（外部url）的图片
-#### 方法1
+### 显示网络上（外部url）的图片
+#### 方法1【直接引用文件】
 ##### `格式:`!\[标识](链接地址 "停留文本")    (添加感叹号能显示出图片)
 <br>编辑工具栏:<br>
 ![tool-editor](https://www.zybuluo.com/static/img/toolbar-editor.png "好牛逼的样子")
@@ -255,33 +255,30 @@ LaTex 公式编号功能 [语法参考](http://docs.mathjax.org/en/latest/tex.ht
 ![file-list](https://www.zybuluo.com/static/img/file-list.png "负责收集图片吧，哈哈哈")
 <br>以下是百度logo：<br>
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
-#### 方法2
+#### 方法2【间接引用文件】
 ##### `格式:`!\[标识][URL标识]（两个方括号中间不要加空格）
 ![baidu][baidulogo]
 >使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
 
-### 显示仓库（github）的图片
-#### `格式:`\[!\[][/图片文件名]\[链接地址]
-![哈哈哈。。。][ydybj]
-
-<br>2 [![](/mipmap/youdaoyunbiji.png "我的有道云，欢迎关注")][ydybj]
-
+### 显示仓库里（github）的图片
+#### `2格式:`\[!\[][/图片文件名]\[链接地址]
+1       啦啦啦，我是记录的小行家、、、直接戳： ![][ydybj]
+2       嘎嘎嘎，你这个丑小鸭。。。呀呀呀：[![](./mipmap/youdaoyunbiji.png "我的有道，欢迎关注")
 
 
-## 16.超链接
-#### `文本格式:`\[文本内容](链接地址 "停留文本")
-<br>
+
+## 16.超链接 
+#### `文本格式:`\[文本内容](链接地址 "注释")
 [D时代的Github](https://github.com/Dshidai "haha") 
-<br>
 
-#### `图片格式:`\[图片标识](链接地址 "停留文本")
-1[![weibo-logo]](http://weibo.com/linpiaochen) 	weibo-logo
-
-2 	[![](/mipmap/youdaoyunbiji.png "我的有道云，欢迎关注")][ydybj]
- 	
-3 	[![ydybj-logo][ydybj] 	ydybj-logo
+#### `图片格式:`1 \[!](\/图片地址/文件名 "注释"）
+1.  间接显示图片：![ydybj-logo][ydybj] 
+2. 	![123456789][bdybj]
+ 	[![weibo-logo]](http://weibo.com/linpiaochen) 	weibo-logo
 
 
+                    
+   
 
 #### 隐式链接标记功能
 让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让 "Google" 链接到 google.com，你可以简化成：[Google][]
@@ -430,10 +427,17 @@ D-->>A: Dashed open arrow
 
 
 
+## 23. 自动链接
+Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用尖括号包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：
+<http://example.com/>
 
 
-Please don't use any `<blink>` tags.
-`&#8212;` is the decimal-encoded equivalent of `&mdash;`.
+
+## 24.锚点  
+网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。注意： Markdown Extra 只支持在标题后插入锚点，其它地方无效。
+
+---
+# 未完待续。。
 
 
 ## 30. 哈哈哈
