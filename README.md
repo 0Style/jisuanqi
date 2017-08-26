@@ -262,7 +262,7 @@ LaTex 公式编号功能 [语法参考](http://docs.mathjax.org/en/latest/tex.ht
 >使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
 
 ### 显示仓库（github）的图片<br>
-![计算器里的图片](https://github.com/Dshidai/jisuanqi/blob/master/src/main/res/mipmap-hdpi/ic_launcher.png "什么鬼")
+![有道云笔记](/jisuanqi/src/main/res/mipmap/youdaoyunbiji.png)
 
 
 ## 16.超链接
@@ -440,6 +440,7 @@ Please don't use any `<blink>` tags.
 [3]: http://weibo.com/Dshidai
 [4]: http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
 [baidulogo]:http://www.baidu.com/img/bdlogo.gif "百度logo"
+[ydybj]:jisuanqi/src/main/res/mipmap/youdaoyunbiji.png "有道云笔记logo"
 
 
 
