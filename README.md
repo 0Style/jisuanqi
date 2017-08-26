@@ -263,7 +263,8 @@ LaTex 公式编号功能 [语法参考](http://docs.mathjax.org/en/latest/tex.ht
 ### 显示仓库里（github）的图片
 #### `2格式:`\[!\[][/图片文件名]\[链接地址]
 1       啦啦啦，我是记录的小行家、、、直接戳： ![][ydybj]
-2       嘎嘎嘎，你这个丑小鸭。。。呀呀呀：[![](./mipmap/youdaoyunbiji.png "我的有道，欢迎关注")
+<br>
+2       嘎嘎嘎，你这个丑小呀.呀.呀..:![开始慌了](./mipmap/youdaoyunbiji.png "我的有道，欢迎关注")
 
 
 
@@ -273,8 +274,7 @@ LaTex 公式编号功能 [语法参考](http://docs.mathjax.org/en/latest/tex.ht
 
 #### `图片格式:`1 \[!](\/图片地址/文件名 "注释"）
 1.  间接显示图片：![ydybj-logo][ydybj] 
-2. 	![123456789][bdybj]
- 	[![weibo-logo]](http://weibo.com/linpiaochen) 	weibo-logo
+2.  D时代的微博：[![weibo](http://weibo.com/p/1005053295425124?is_all=1)]
 
 
                     
