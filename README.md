@@ -242,9 +242,9 @@ LaTex 公式编号功能 [语法参考](http://docs.mathjax.org/en/latest/tex.ht
 
 
 ## 15.显示图片
-### 显示网络（外部url）的图片<br>
+### 显示网络（外部url）的图片
 #### 方法1
-`格式:`!\[标识](链接地址 "停留文本")    (添加感叹号能显示出图片)
+##### `格式:`!\[标识](链接地址 "停留文本")    (添加感叹号能显示出图片)
 <br>编辑工具栏:<br>
 ![tool-editor](https://www.zybuluo.com/static/img/toolbar-editor.png "好牛逼的样子")
 <br>管理工具栏:<br>
@@ -256,25 +256,32 @@ LaTex 公式编号功能 [语法参考](http://docs.mathjax.org/en/latest/tex.ht
 <br>以下是百度logo：<br>
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
 #### 方法2
-`格式:`!\[标识][URL标识]（两个方括号中间不要加空格）
-<br>
+##### `格式:`!\[标识][URL标识]（两个方括号中间不要加空格）
 ![baidu][baidulogo]
 >使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
 
-### 显示仓库（github）的图片<br>
-![有道云笔记](/jisuanqi/src/main/res/mipmap/youdaoyunbiji.png)
+### 显示仓库（github）的图片
+#### `格式:`\[!\[][/图片文件名]\[链接地址]
+![哈哈哈。。。][ydybj]
+
+<br>2 [![](/mipmap/youdaoyunbiji.png "我的有道云，欢迎关注")][ydybj]
+
 
 
 ## 16.超链接
-`文本格式:`\[文本内容](链接地址 "停留文本")
+#### `文本格式:`\[文本内容](链接地址 "停留文本")
 <br>
 [D时代的Github](https://github.com/Dshidai "haha") 
 <br>
 
-`图片格式:`\[图片标识](链接地址 "停留文本")
-<br>
-[D时代的GitHub]：(https://github.com/Dshidai "哈哈") 
-<br> 
+#### `图片格式:`\[图片标识](链接地址 "停留文本")
+1[![weibo-logo]](http://weibo.com/linpiaochen) 	weibo-logo
+
+2 	[![](/mipmap/youdaoyunbiji.png "我的有道云，欢迎关注")][ydybj]
+ 	
+3 	[![ydybj-logo][ydybj] 	ydybj-logo
+
+
 
 #### 隐式链接标记功能
 让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让 "Google" 链接到 google.com，你可以简化成：[Google][]
@@ -439,8 +446,8 @@ Please don't use any `<blink>` tags.
 [2]: https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册
 [3]: http://weibo.com/Dshidai
 [4]: http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
-[baidulogo]:http://www.baidu.com/img/bdlogo.gif "百度logo"
-[ydybj]:jisuanqi/src/main/res/mipmap/youdaoyunbiji.png "有道云笔记logo"
+[baidulogo]:http://www.baidu.com/img/bdlogo.gif "百度logo" 
+[ydybj]:https://github.com/Dshidai/jisuanqi/blob/master/src/main/res/mipmap/youdaoyunbiji.png "有道云笔记logo"
 
 
 
